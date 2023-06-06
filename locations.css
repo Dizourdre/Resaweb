@@ -1,0 +1,281 @@
+
+
+
+@font-face {
+    font-family: 'b_pro';
+    src: url('Fonts/BlenderPro-Bold.woff2') format('woff2'),
+         url('Fonts/BlenderPro-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'Rajdhani_med';
+    src: url('Fonts/Rajdhani-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'Rajdhani_sbold';
+    src: url('Fonts/Rajdhani-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+
+  #menu {
+    background-color: #00FFB2;
+    color: #000;
+    height: 60px;
+    font-family: Rajdhani_sbold;
+    border-radius: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  
+  #menu ul, #menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #menu ul {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #menu li {
+    transition: background-color 0.5s;
+    margin: 0;
+    margin-right: 20px;
+  
+  }
+  
+  #menu li:hover:not(.accueil, .olalanon) {
+    background-color: #C6B38E;
+  }
+  
+  
+  #menu a {
+    display: block;
+    line-height: 60px;
+    padding: 0 14px; 
+    text-decoration: none;
+    font-family: Rajdhani_sbold;
+    color: #000;
+    font-size: 1.25rem;
+    transition: color 0.5s;
+  }
+  
+  #menu a:hover {
+    color: #000;
+  }
+  
+  #menu input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .logo_nav {
+    margin-top: 25px;
+    height: 60px
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+
+body {
+    background-color: #0F0415;
+    overflow-x: hidden;
+}
+
+.bg_filters {
+    position: fixed;
+    margin-top: 6%;
+    width: 15vw;
+    max-height: 40vw;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+form select{
+    position: fixed;
+    padding: 1%;
+    background-color: #00FFB2;
+    border: solid 5px black;
+    border-radius: 20px;
+    color: black;
+}
+
+.quartiers {
+    top: 22%;
+    left: 1.5%;
+}
+
+.type {
+    top: 40%;
+    left: 1.5%;
+}
+
+
+form label:not(.Prix) {
+    position: fixed;
+    color: black;
+    font-family: Rajdhani_sbold;
+    font-size: 1.5rem;
+}
+
+.label_quartiers {
+    top: 18%;
+    left: 1.5%;
+}
+
+.label_type {
+    top: 36%;
+    left: 1.5%;
+}
+
+.label_prix {
+    left: 1.5%;
+    top: 55%;
+}
+
+.ipt_prix {
+    position: relative;
+    float: left;
+
+}
+
+.Prix {
+    position: relative;
+    font-size: 1.25rem;
+    display: block;
+    font-family: Rajdhani_med;
+    color: black;
+  }
+
+.price {
+    margin-left: 1%;
+    position: fixed;
+    top: 60%;
+    width: 100%;
+}
+
+.recherche_location {
+    position: fixed;
+    padding: 1%;
+    left: 4%;
+    top: 75%;
+    background-color: #00FFB2;
+    border: solid 5px black;
+    border-radius: 20px;
+    color: black;
+}
+
+.boites {
+    position: absolute;
+    width: 70%;
+    top: 20%;
+    left: 60%;
+}
+
+.box_location {  
+    border: solid 3px #FFF500;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 21px -4px #FFF500;
+    position: relative;
+    transform: translate(-50%);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 400px;
+    transition: all .5s;
+}
+
+.box_location:hover {
+    border-color : #C6B38E;
+    transition: all .5s;
+}
+
+.box_location h3 {
+    position: absolute;
+    left: 65%;
+    top: -5%;
+    color: #00FFB2;
+    text-shadow: 2px 2px 9px rgba(0,255,178,0.72);
+    font-size:calc(8px + 2.5vw);
+    font-family: Rajdhani_sbold;
+}
+
+.box_location h4 {
+    position: absolute;
+    left: 75%;
+    transform: translate(-10%);
+    text-align: center;
+    top: 52.5%;
+    color: #00FFB2;
+    text-shadow: 2px 2px 9px rgba(0,255,178,0.72);
+    font-size:calc(8px + 2vw);
+    font-family: Rajdhani_sbold;
+}
+.box_location p {
+    font-family: Rajdhani_med;
+    color: #00FFB2;
+    text-shadow: 2px 2px 9px rgba(0,255,178,0.72);
+    width: 30%;
+    font-size:calc(8px + .2vw);
+    position: absolute;
+    top: 25%;
+    left: 65%;
+}
+.box_location img {
+    
+    top: 0;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 100%;
+    width: 60%;
+    object-fit:cover;
+    margin: 0;
+}
+
+.resultats_recherche {
+    color: white;
+    margin-left: 5%;
+}
+
+.box_location .offre{
+  position: relative;
+  top: 85%;
+  left: 72.5%;
+  background-color: #111522;
+  padding: 1%;
+  color: white;
+  text-shadow: 0px 0px 20px white;
+  font-size: 1.25rem ;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 150px;
+  border: solid 2px white;
+  text-decoration: none;
+  font-family: Rajdhani_med;
+}
+
+.box_location .offre:hover {
+  border-color: #C6B38E;
+  color: #C6B38E;
+}

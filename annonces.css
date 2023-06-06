@@ -1,0 +1,245 @@
+
+
+@font-face {
+  font-family: 'hk';
+  src: url('Fonts/hkgroteskwide-bold-webfont.woff2') format('woff2'),
+       url('Fonts/hkgroteskwide-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+font-family: 'b_pro';
+src: url('Fonts/BlenderPro-Bold.woff2') format('woff2'),
+     url('Fonts/BlenderPro-Bold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+
+}
+
+@font-face {
+font-family: 'Rajdhani_med';
+src: url('Fonts/Rajdhani-Medium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+
+}
+
+@font-face {
+font-family: 'Rajdhani_sbold';
+src: url('Fonts/Rajdhani-SemiBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+
+}
+
+body {
+  font-family: 'rajdhani';
+    margin: 0;
+    background-color: #0F0415;
+    overflow-x: hidden;
+    
+  }
+
+
+  #menu {
+    background-color: #00FFB2;
+    color: #000;
+    height: 60px;
+    font-family: Rajdhani_sbold;
+    border-radius: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  
+  #menu ul, #menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #menu ul {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #menu li {
+    transition: background-color 0.5s;
+    margin: 0;
+    margin-right: 20px;
+  
+  }
+  
+  #menu li:hover:not(.accueil, .olalanon) {
+    background-color: #C6B38E;
+  }
+  
+  #menu a {
+    display: block;
+    line-height: 60px;
+    padding: 0 14px; 
+    text-decoration: none;
+    font-family: Rajdhani_sbold;
+    color: #000;
+    font-size: 1.25rem;
+    transition: color 0.5s;
+  }
+  
+  #menu a:hover {
+    color: #000;
+  }
+  
+  #menu input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .logo_nav {
+    margin-top: 25px;
+    height: 60px
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+
+  #container {
+    margin-top: 500%;
+    max-width: 800px;
+    margin: 4% auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #FFF500;
+    border-radius: 10px;
+  }
+
+  #description {
+    margin-bottom: 20px;
+    color: #10FF8C;
+    font-family: Rajdhani_med;
+  }
+
+  #features {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  #features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  #price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  #reserve-button {
+    position: absolute;
+    font-family: Rajdhani_med;
+    top: 140%;
+    padding: 10px 40px;
+    background-color: #3366cc00;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 61.5%;
+    border-radius: 20px;
+    border: solid 5px white;
+    
+  }
+
+  #prix-button {
+    position: absolute;
+    font-family: Rajdhani_med;
+    top: 116%;
+    font-size: 3rem;
+    padding: 20px 30px;
+    background-color: #3366cc00;
+    color: #10FF8C;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 60%;
+    border-radius: 20px;
+    border: solid 5px #FFF500;
+    
+  }
+
+
+.separator {
+    position: absolute;
+    z-index: 1;
+    width: 1%;
+    left: 50%;
+    top: 135%;
+    transform: translate(50%,-50%);
+    height: 40%;
+    background-color: #FF5A5F;
+    border-radius: 20px;
+    box-shadow: -1px -2px 15px 8px rgba(255,90,95,0.5);
+}
+
+.separator2 {  
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    top: 110%;
+    width: 70%;
+    background-color: #FF5A5F;
+    border-radius: 20px;
+    box-shadow: -1px -2px 15px 8px rgba(255,90,95,0.5);
+
+}
+
+h2 {
+  position: absolute;
+  top: 112%;
+  left: 53%;
+
+  font-size: 2rem;
+  color: #10FF8C;
+  font-family: Rajdhani_sbold;
+}
+
+h1:not(.titre_nav) {
+  color: #10FF8C;
+  font-family: Rajdhani_sbold;
+}
+
+
+
+
